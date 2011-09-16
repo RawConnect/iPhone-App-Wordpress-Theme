@@ -1,0 +1,347 @@
+body {
+	background-image: url('images/rt_bg_bottom.png');
+	background-position: bottom;
+	background-repeat: repeat-x;
+	font-family: arial;
+	font-size: 12px;
+	margin: 0px;
+	padding: 0px;
+ }
+img {
+	border: none;
+ }
+li {
+	list-style-type: none;
+ }
+.content_body a {
+	color: #FFFFFF;
+	text-decoration: none;
+ }
+.content_body a:hover {
+	text-decoration: underline;
+ }
+#content {
+	background-color: #325776;
+	background-image: url('images/rt_bg_tall.png');
+	background-position: top;
+	background-repeat: repeat-x;
+ }
+.layout_vert {
+	margin: 0px auto;
+	width: 890px;
+ }
+.layout_hori {
+	margin: 0px auto;
+	width: 1035px;
+ }
+.center_container {
+	padding-bottom:30px;
+ }
+.content_left {
+	float: left;
+	width: 624px;
+ }
+.header {
+	display: table-cell;
+	height: 155px;
+	line-height: 155px;
+	padding-left: 85px;
+	vertical-align: middle;
+ }
+.header a {
+	color: white;
+	font-family: Times New Roman;
+	font-size: 54px;
+	text-decoration: none;
+ }
+.nav {
+ }
+.menu {
+	width: 537px;
+ }
+.menu ul {
+	width: 537px;
+ }
+.nav ul {
+	margin-left: 85px;
+ }
+.nav .more {
+	float: right;
+ }
+.nav .more ul {
+	margin-left: -87px;
+	position: absolute;
+	z-index: 100;
+ }
+.nav a {
+	color: white;
+	text-decoration: none;
+ }
+.nav li {
+	background-image: url('images/rt_nav_tab1.png');
+	float: left;
+	font-size: 14px;
+	height: 34px;
+	line-height: 34px;
+	margin-right: 7px;
+	padding: 0px 0px;
+	text-align: center;
+	width: 106px;
+ }
+.nav li.last {
+	background-image: url('images/rt_nav_tablast.png');
+	color: white;
+	width: 80px;
+ }
+.nav li.last ul.menu {
+	display: none;
+	height: auto;
+	margin: 0px;
+	margin-top: 1px;
+	position: absolute;
+	width: 80px;
+ }
+.nav li.last ul.menu li {
+	background: #5a6d6f;
+	border-top: 1px solid #728486;
+	font-size: 12px;
+	height: 24px;
+	line-height: 24px;
+	margin-left: -35px;
+	width: 115px;
+ }
+.nav li.last:hover ul.menu {
+	display: block;
+ }
+.content_appicon {
+	float: left;
+	padding-top: 33px;
+	width: 89px;
+ }
+.content_appicon img {
+	height: 73px;
+	width: 73px;
+ }
+.content_body {
+	float: left;
+	margin-right: 17px;
+	padding-top: 26px;
+	width: 518px;
+ }
+.description {
+	border-top: 1px solid #7b9d9d;
+	font-size: 15px;
+	color: #d2dcde;
+	line-height: 22px;
+	margin-top: -3px;
+	padding-top: 8px;
+ }
+.meta {
+	font-size: 15px;
+	line-height: 22px;
+	padding: 30px 0px 0px 0px;
+ }
+.meta span {
+	font-weight: bold;
+ }
+.details {
+	float: left;
+	width: 293px;
+ }
+.appstore {
+	float: left;
+	width: 202px;
+ }
+#widgets {
+	background-color: #ffffff;
+	background-image: url('images/rt_bg_white.png');
+	background-position: top;
+	background-repeat: repeat-x;
+	padding-top: 45px;
+ }
+#widgets .layout_vert {
+	margin: 0px auto;
+	width: 915px;
+ }
+#widgets .layout_hori {
+	margin: 0px auto;
+	width: 1035px;
+ }
+.widget li {
+	padding: 1px 0px;
+ }
+.widget li a {
+	color: #658F35;
+ }
+.widget li a:hover {
+	color: #658F35;
+ }
+.rt_widget_testimonials {
+	color: #616363;
+	font-family: times new roman;
+ }
+.rt_widget_testimonials .rt_testimonial_text {
+	font-size: 20px;
+	padding: 0px 5px;
+ }
+.rt_widget_testimonials .rt_testimonial_src {
+	font-size: 17px;
+	font-style: italic;
+	padding: 0px 10px;
+	padding-top: 5px;
+ }
+.widgets_left {
+	float: left;
+	width: 588px;
+ }
+.widgets_left h3 a {
+	color: #658F35;
+	font-family: Georgia,Times New Roman,Trebuchet MS;
+	font-size: 20px;
+	font-style: italic;
+	text-decoration: none;
+	text-transform: none;
+ }
+.widgets_left .post_thumb {
+	float: left;
+	overflow: hidden;
+	padding-top: 4px;
+	padding-right: 30px;
+	text-align: right;
+	width: 80px;
+ }
+.widgets_left .summary {
+	color: #333333;
+	line-height: 22px;
+	margin: 0;
+	padding: 0px;
+ }
+.widgets_left .excerpt a {
+	color: #658F35;
+	font-family: Georgia,Times New Roman,Trebuchet MS;
+	font-style: italic;
+	text-decoration: none;
+	text-transform: none;
+ }
+.widgets_left .post {
+	border-bottom: 1px dashed #d8d9da;
+	margin-bottom: 12px;
+	margin-left: 95px;
+	padding-bottom: 10px;
+ }
+.widgets_right {
+	color: #333333;
+	float: left;
+	font-family: Arial,Tahoma,Verdana;
+	font-size: 12px;
+	margin-left: 31px;
+	width: 257px;
+ }
+.widgets_right li.widget {
+	background: none repeat scroll 0 0 #F9F9F9;
+	border: 1px solid #E9E8E8;
+	float: left;
+	margin-bottom: 20px;
+	padding: 1px 15px 25px;
+	width: 267px;
+ }
+.widgets_right li h2 {
+	color: #658F35;
+	font-family: Georgia,Times New Roman,Trebuchet MS;
+	font-size: 20px;
+	font-weight: normal;
+	margin: 0;
+	padding: 15px 0 8px;
+ }
+.widgets_right li.rt_widget_testimonials h2 {
+	background-image: url("images/rt_icon_speech.png");
+	background-position: 0 14px;
+	background-repeat: no-repeat;
+	padding-left: 44px;
+ }
+ul {
+	margin: 0px;
+	padding: 0px;
+ }
+h1,h2,h3,h4,h5 {
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+ }
+.content_body h2 {
+	color: #2b4a65;
+	font-family: Times New Roman;
+	font-size: 41px;
+	font-weight: normal;
+	left: 2px;
+	line-height: 45px;
+	position: relative;
+	top: 2px;
+ }
+.content_body .highlight {
+	color: #fff;
+	left: -1px;
+	position: absolute;
+	top: -2px;
+ }
+.content_body p {
+	margin: 0px 0px;
+ }
+.hori li,.hori li img {
+	height: 224px;
+	width: 337px;
+ }
+.vert li,.vert li img {
+	height: 337px;
+	width: 224px;
+ }
+.layout_vert .iphone {
+	float: left;
+	padding-bottom: 0px;
+	padding-top: 28px;
+	width: 266px;
+ }
+.layout_vert .iphone_bg {
+	background-image: url('images/iphone_vert.png');
+	height: 496px;
+ }
+.layout_vert .iphone_padding {
+	padding-left: 21px;
+	padding-top: 80px;
+ }
+.layout_hori .iphone {
+	float: left;
+	width: 525px;
+ }
+.layout_hori .iphone_bg {
+	background-image: url('images/iphone_hori.png');
+	height: 277px;
+ }
+.layout_hori .iphone_padding {
+	padding-left: 95px;
+	padding-top: 23px;
+ }
+.footer a {
+	color: #CCCCCC;
+ }
+.footer a:hover {
+	color: #dddddd;
+ }
+.footer {
+	background-color: #6f6f6f;
+	background-image: url('images/rt_bg_bottom.png');
+	background-repeat: repeat-x;
+	color: #CCCCCC;
+	font-family: Arial,Tahoma,Verdana;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0px;
+	padding: 8px 0px;
+ }
+.footer p {
+	margin: 8px auto;
+	width: 890px;
+ }
+#slider li {
+	position: absolute;
+ }
