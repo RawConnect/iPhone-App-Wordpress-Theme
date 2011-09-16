@@ -76,11 +76,11 @@ if ( is_admin() ){
   
   if($_GET['delete']){
 	$existing = get_option('rt_screens');
-	foreach ($existing as &$value) {
-	    
-
-		if ($value['hash'] == $_GET['delete']){			
-			unset($existing[array_search($value,$existing)]);
+	if (!empty($existing)) {
+		foreach ($existing as &$value) {	    
+			if ($value['hash'] == $_GET['delete']) {			
+				unset($existing[array_search($value,$existing)]);
+			}
 		}
 	}
 	update_option( 'rt_screens', $existing );  
@@ -88,11 +88,11 @@ if ( is_admin() ){
   }
   if($_GET['tdelete']){
 	$existing = get_option('rt_testimonial');
-	foreach ($existing as &$value) {
-	    
-
-		if ($value['hash'] == $_GET['tdelete']){			
-			unset($existing[array_search($value,$existing)]);
+	if (!empty($existing)) {
+		foreach ($existing as &$value) {
+			if ($value['hash'] == $_GET['tdelete']){			
+				unset($existing[array_search($value,$existing)]);
+			}
 		}
 	}
 	update_option( 'rt_testimonial', $existing );  
@@ -296,9 +296,11 @@ function rt_render_testimonials() {
 function rt_preview_screens() {
     $existing = array();
 	$existing = get_option('rt_screens');
-	foreach ($existing as $value) {
-		if (!$value['error']){
-			echo "<div style='float:left;border:1px solid #ddd;padding:10px;background-color:white;margin-right:6px;'><img style='height:135px;width:90px;' src='{$value['url']}' /><div style='text-align:center;height:11px;'><a href='admin.php?page=".$_GET['page']."&delete={$value['hash']}'>Delete</a></div></div>";
+	if (!empty($existing)) {
+		foreach ($existing as $value) {
+			if (!$value['error']){
+				echo "<div style='float:left;border:1px solid #ddd;padding:10px;background-color:white;margin-right:6px;'><img style='height:135px;width:90px;' src='{$value['url']}' /><div style='text-align:center;height:11px;'><a href='admin.php?page=".$_GET['page']."&delete={$value['hash']}'>Delete</a></div></div>";
+			}
 		}
 	}
 

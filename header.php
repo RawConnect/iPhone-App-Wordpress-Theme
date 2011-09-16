@@ -48,21 +48,23 @@
 			<?php 
 			  $pages = get_pages(); 
 			  $count = 0;
-			  foreach ($pages as $pagg) {
-				if($count == 3){				
-					echo '</ul>';
-					echo '</div>';
-					echo '<div class="more"><ul><li class="last">+<ul class="menu">';
-				}
-				echo '<li class="page_item page-item-'.$pagg->ID.'">';
-				echo '<a title="'.$pagg->post_title.'" href="'.get_page_link($pagg->ID).'">'.$pagg->post_title.'</a>';
-				echo '</a>';				
-				echo '</li>';
+			  if (!empty($pages)) {
+			 	 foreach ($pages as $pagg) {
+					if($count == 3){				
+						echo '</ul>';
+						echo '</div>';
+						echo '<div class="more"><ul><li class="last">+<ul class="menu">';
+					}
+					echo '<li class="page_item page-item-'.$pagg->ID.'">';
+					echo '<a title="'.$pagg->post_title.'" href="'.get_page_link($pagg->ID).'">'.$pagg->post_title.'</a>';
+					echo '</a>';				
+					echo '</li>';
 
-
-				$count = $count +1;
+					$count = $count +1;
 				
+				  }
 			  }
+			  
 			  if($count > 3){				
 					echo '</ul>';
 					echo '</li>';
