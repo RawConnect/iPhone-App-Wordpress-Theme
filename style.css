@@ -50,7 +50,7 @@ li {
  }
 .header a {
 	color: white;
-	font-family: Times New Roman;
+	font-family: Myriad Pro, Helvetica;
 	font-size: 54px;
 	text-decoration: none;
  }
@@ -208,7 +208,6 @@ li {
 	padding-top: 4px;
 	padding-right: 30px;
 	text-align: right;
-	width: 80px;
  }
 .widgets_left .summary {
 	color: #333333;
@@ -224,6 +223,7 @@ li {
 	text-transform: none;
  }
 .widgets_left .post {
+	width: 450px;
 	border-bottom: 1px dashed #d8d9da;
 	margin-bottom: 12px;
 	margin-left: 95px;
@@ -270,7 +270,7 @@ h1,h2,h3,h4,h5 {
  }
 .content_body h2 {
 	color: #2b4a65;
-	font-family: Times New Roman;
+	font-family: Myriad Pro, Helvetica;
 	font-size: 41px;
 	font-weight: normal;
 	left: 2px;
@@ -303,7 +303,7 @@ h1,h2,h3,h4,h5 {
  }
 .layout_vert .iphone_bg {
 	background-image: url('images/iphone_vert.png');
-	height: 496px;
+	height: 582px;
  }
 .layout_vert .iphone_padding {
 	padding-left: 21px;
@@ -342,6 +342,29 @@ h1,h2,h3,h4,h5 {
 	margin: 8px auto;
 	width: 890px;
  }
-#slider li {
+
+#slider {
+	position: relative;
+	top: 12px;
+	left: 2px;
+}
+
+#slider img {
 	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index:8;
  }
+
+#slider img.active {
+    z-index:10;
+}
+
+#slider img.last-active {
+    z-index:9;
+}
+
+#social {
+	position: relative;
+	top: 30px;
+}

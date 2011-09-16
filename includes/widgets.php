@@ -23,7 +23,7 @@ function rt_widget_posts()
 	?>
 
 				
-				<div class="post_thumb"><img src="<?php echo get_post_meta($post->ID, 'rt_thumb', TRUE); ?>"</div>
+				<!--<div class="post_thumb"><img src="<?//php echo get_post_meta($post->ID, 'rt_thumb', TRUE); ?>"</div>-->
 				<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 					<h3><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
 					<div class="summary">
@@ -69,14 +69,12 @@ function rt_widget_posts_control(){
 }
 function rt_widgets_init()
 {
-	wp_register_sidebar_widget("rt_widget_testimonials","RawApps Testimonials", 'rt_widget_testimonials');
-	wp_register_sidebar_widget("rt_widget_posts","RawApps Posts", 'rt_widget_posts');
-	wp_register_widget_control("rt_widget_posts","RawApps Posts", 'rt_widget_posts_control');
+	wp_register_sidebar_widget("rt_widget_testimonials","RawApps Testimonials (Right Sidebar)", 'rt_widget_testimonials');
+	wp_register_sidebar_widget("rt_widget_posts","RawApps Posts (Left Sidebar)", 'rt_widget_posts');
+	wp_register_widget_control("rt_widget_posts","RawApps Posts (Left Sidebar)", 'rt_widget_posts_control');
 
 }
 
 add_action("init", "rt_widgets_init");
 
 ?>
-
-
