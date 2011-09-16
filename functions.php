@@ -254,13 +254,6 @@ function rt_post_uploadbox() {
 	</p>
 	<?php
 }
-
-
-
-
-
-
-
 //DISPLAY FUNCTIONS
 function rt_render_appicon(){
     $options = get_option('rt_icon');
@@ -282,9 +275,11 @@ function rt_render_slider() {
     $existing = array();
 	$existing = get_option('rt_screens');
 	echo "<div id='slider' class='".get_option("rt_apporient")."'><ul>";
-	foreach ($existing as $value) {
-		if (!$value['error']){
-			echo "<li><img src='{$value['url']}' /></li";
+	if (!empty($existing)) {
+		foreach ($existing as $value) {
+			if (!$value['error']){
+				echo "<li><img src='{$value['url']}' /></li";
+			}
 		}
 	}
 	echo "</ul></div>";
@@ -292,9 +287,11 @@ function rt_render_slider() {
 function rt_render_testimonials() {
     $existing = array();
 	$existing = get_option('rt_testimonial');
-	$value = $existing[array_rand($existing, 1)];
-	echo '<div class="rt_testimonial_text">"'.$value["text"].'"</div>';
-	echo '<div class="rt_testimonial_src"> - '.$value["source"].'</div>';
+	if (!empty($existing)) {
+		$value = $existing[array_rand($existing, 1)];
+		echo '<div class="rt_testimonial_text">"'.$value["text"].'"</div>';
+		echo '<div class="rt_testimonial_src"> - '.$value["source"].'</div>';
+	}
 }
 function rt_preview_screens() {
     $existing = array();
@@ -308,11 +305,13 @@ function rt_preview_screens() {
 }function rt_preview_testimonials() {
     $existing = array();
 	$existing = get_option('rt_testimonial');
-	foreach ($existing as $value) {
-		echo '<tr valign="top">';
-		echo '<th scope="row">'.$value["source"].'</th>';
-		echo '<td>'.$value["text"].'<div><a href="admin.php?page='.$_GET['page'].'&tdelete='.$value['hash'].'">Delete</a></div></td>';
-		echo '</tr>';
+	if (!empty($existing)) {
+		foreach ($existing as $value) {
+			echo '<tr valign="top">';
+			echo '<th scope="row">'.$value["source"].'</th>';
+			echo '<td>'.$value["text"].'<div><a href="admin.php?page='.$_GET['page'].'&tdelete='.$value['hash'].'">Delete</a></div></td>';
+			echo '</tr>';
+		}
 	}
 }
 //VALIDATION FUNCTIONS
@@ -328,10 +327,9 @@ function rt_validate_testimonial($input) {
 		$testimonials = array();
 	}
 	array_push($testimonials, $new);
-	var_dump($input);
+	//var_dump($input);
 	return $testimonials;
 }
-
 
 function rt_upload_validate($input,$optname = 'rt_icon') {
     $newinput = array();
@@ -597,6 +595,4 @@ function rt_options_testimonials() {
 }
 
 add_action('wp_head', 'rt_head');
-
-
 ?>
