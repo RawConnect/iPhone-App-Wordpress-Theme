@@ -2,7 +2,7 @@ body {
 	background-image: url('images/rt_bg_bottom.png');
 	background-position: bottom;
 	background-repeat: repeat-x;
-	font-family: arial;
+	font-family: Myriad Pro;
 	font-size: 12px;
 	margin: 0px;
 	padding: 0px;
@@ -119,6 +119,10 @@ li {
 	width: 89px;
  }
 .content_appicon img {
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+    -khtml-border-radius: 12px;
+    -webkit-border-radius: 12px;
 	height: 73px;
 	width: 73px;
  }
