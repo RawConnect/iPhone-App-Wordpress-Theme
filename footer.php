@@ -21,14 +21,9 @@
 get_sidebar();
 echo "<div class='footer'>
 	<p>
-		WordPress Theme by <a href='http://www.rawappvice.com'>RawAppvice.com</a>
+		WordPress Theme by <a href='http://www.rawappvice.com'>RawAppvice.com</a> | In Association With <a href='http://www.rawapps.com'>RawApps.com</a> | Powered by <a href='http://wordpress.org/' title='%s'>WordPress</a>
 	</p>
-	<p>
-		In Association With <a href='http://www.rawapps.com'>RawApps.com</a>
-	</p>
-	<p class='credit'>";
-	echo "Powered by <a href='http://wordpress.org/' title='%s'>WordPress</a>";
-	echo "</p></div>"; 
+	</div>"; 
 ?>
 <?php
 wp_footer();
