@@ -51,7 +51,7 @@ li {
 .header a {
 	color: white;
 	font-family: Myriad Pro, Helvetica;
-	text-shadow: 2px 2px #333;
+	text-shadow: 2px 2px 2px #333;
 	font-size: 54px;
 	text-decoration: none;
  }
