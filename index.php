@@ -19,7 +19,10 @@ get_header();
 				<div class="details">
 					<div><span>Version:</span> <?php echo get_option('rt_appversion'); ?>  </div>     
 					<div><span>Author:</span> <?php echo get_option('rt_authorname'); ?>     </div>    
-					<div><span>Price:</span> <?php echo get_option('rt_appprice'); ?> </div>    
+					<div><span>Price:</span> <?php echo get_option('rt_appprice'); ?> </div> 
+					<div class="app-price-tag"><span class="pricetag-text"><?php echo get_option('rt_appprice'); ?></span></div>
+					<div class="app-price-tag app-price-tag-cover"><p> </p></div>
+
 				</div>
 				<div class="appstore">
 					<a href="<?php echo get_option('rt_ituneslink'); ?>"><img src="<?php echo get_bloginfo('template_directory'); ?>/images/rt_appstorelink.png"></a>

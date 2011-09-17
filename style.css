@@ -368,3 +368,46 @@ h1,h2,h3,h4,h5 {
 	position: relative;
 	top: 30px;
 }
+
+.app-price-tag-cover {
+	background-color: transparent !important;
+	z-index: 1001;
+	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.15));
+	background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.15));
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25), inset 0 0 6px rgba(255, 255, 255, 0.24);
+	-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25), inset 0 0 6px rgba(255, 255, 255, 0.24);
+	-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25), inset 0 0 6px rgba(255, 255, 255, 0.24);
+	-webkit-border-radius: 80px;
+	-moz-border-radius: 80px;
+	-o-border-radius: 80px;
+	-ms-border-radius: 80px;
+	-khtml-border-radius: 80px;
+	border-radius: 80px;
+}
+
+.app-price-tag {
+	background-color: #78A24F;
+	text-align: center;
+	height: 90px;
+	width: 90px;
+	margin-top: -70px;
+	position: absolute;
+	top: 110px;
+	left: 800px;
+	
+	display: block;
+	-webkit-border-radius: 80px;
+	-moz-border-radius: 80px;
+	-o-border-radius: 80px;
+	-ms-border-radius: 80px;
+	-khtml-border-radius: 80px;
+	border-radius: 80px;
+}
+
+.pricetag-text {
+	color: #EEEEEE;
+	font-family: Myriad Pro;
+	font-size: 28px;
+	position: relative;
+	top: 37px;
+}
