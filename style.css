@@ -375,6 +375,12 @@ h1,h2,h3,h4,h5 {
 	top: 30px;
 }
 
+.app-price-tag-wrapper {
+	position: relative;
+	top: -320px;
+	left: 515px;
+}
+
 .app-price-tag-cover {
 	background-color: transparent !important;
 	z-index: 1001;
@@ -398,8 +404,6 @@ h1,h2,h3,h4,h5 {
 	width: 90px;
 	margin-top: -70px;
 	position: absolute;
-	top: 110px;
-	left: 800px;
 	
 	display: block;
 	-webkit-border-radius: 80px;
