@@ -1,5 +1,4 @@
 body {
-	background-image: url('images/rt_bg_bottom.png');
 	background-position: bottom;
 	background-repeat: repeat-x;
 	font-family: Myriad Pro;
@@ -22,7 +21,6 @@ li {
  }
 #content {
 	background-color: #325776;
-	background-image: url('images/rt_bg_tall.png');
 	background-position: top;
 	background-repeat: repeat-x;
  }
@@ -61,7 +59,13 @@ li {
 	width: 537px;
  }
 .menu ul {
-	width: 537px;
+	width: 523px;
+	background-color: #6A96BB;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-khtml-border-radius: 5px;
  }
 .nav ul {
 	margin-left: 85px;
@@ -78,19 +82,22 @@ li {
 	color: white;
 	text-decoration: none;
  }
+ .nav a:hover {
+ 	color: #CCC;
+ }
 .nav li {
-	background-image: url('images/rt_nav_tab1.png');
 	float: left;
-	font-size: 14px;
+	font-size: 18px;
 	height: 34px;
 	line-height: 34px;
-	margin-right: 7px;
+	margin-right: 0px;
+	margin-left: 12px;
 	padding: 0px 0px;
-	text-align: center;
-	width: 106px;
+	padding-top: 3px;
+	text-align: left;
+	/*width: 106px;*/
  }
 .nav li.last {
-	background-image: url('images/rt_nav_tablast.png');
 	color: white;
 	width: 80px;
  }
