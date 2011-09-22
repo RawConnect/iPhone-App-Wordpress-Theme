@@ -21,8 +21,9 @@ li {
  }
 #content {
 	background-color: #325776;
-	background-position: top;
-	background-repeat: repeat-x;
+	-moz-box-shadow: 0px 3px 5px #333;
+	-webkit-box-shadow: 0px 3px 5px #333;
+	box-shadow: 0px 3px 5px #333;
  }
 .layout_vert {
 	margin: 0px auto;
@@ -66,6 +67,10 @@ li {
 	-o-border-radius: 5px;
 	-ms-border-radius: 5px;
 	-khtml-border-radius: 5px;
+
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
  }
 .nav ul {
 	margin-left: 85px;
@@ -95,7 +100,6 @@ li {
 	padding: 0px 0px;
 	padding-top: 3px;
 	text-align: left;
-	/*width: 106px;*/
  }
 .nav li.last {
 	color: white;
@@ -165,11 +169,12 @@ li {
 	width: 202px;
  }
 #widgets {
-	background-color: #ffffff;
-	background-image: url('images/rt_bg_white.png');
+	background-color: #fcfcfc;
 	background-position: top;
 	background-repeat: repeat-x;
 	padding-top: 45px;
+	position: relative;
+	top: 5px;
  }
 #widgets .layout_vert {
 	margin: 0px auto;
